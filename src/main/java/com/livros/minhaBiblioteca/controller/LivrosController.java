@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.livros.minhaBiblioteca.model.Livros;
 import com.livros.minhaBiblioteca.repository.LivrosRepository;
 
+
 @RestController
 @RequestMapping("/Livros")
 
@@ -120,20 +121,24 @@ public class LivrosController {
 	
 	@PutMapping("/{id}")
 	public ResponseEntity<Livros> atualizar(@PathVariable Long id, @RequestBody Livros livrosAtualizado) {
-	Optional<Livros> livrosExistente = livrosRepository.findById(id);
-	 if (livrosExistente.isPresent()) {
-		 	Livros livros = livrosExistente.get();
-		 	livros.setTitulo(livrosAtualizado.getTitulo());
-		 	livros.setAutor(livrosAtualizado.getAutor());
-		 	livros.setCategoria(livrosAtualizado.getCategoria());
-		 	livros.setDescricao(livrosAtualizado.getDescricao());
-		 	livros.setPaginas(livrosAtualizado.getPaginas());
-		 	livros.setEditora(livrosAtualizado.getEditora());
-	        Livros livroAtualizado = livrosRepository.save(livros);
-		 	return ResponseEntity.ok(livros);
-		 } else {
-		 	return ResponseEntity.notFound().build();
-		 }
+		Optional<Livros> livrosExistente = livrosRepository.findById(id);
+		if (livrosExistente.isPresent()) {
+			Livros livros = livrosExistente.get();
+			livros.setTitulo(livrosAtualizado.getTitulo());
+			livros.setAutor(livrosAtualizado.getAutor());
+			livros.setCategoria(livrosAtualizado.getCategoria());
+			livros.setDescricao(livrosAtualizado.getDescricao());
+			livros.setEditora(livrosAtualizado.getEditora());
+			if (livrosAtualizado.getPaginas() != null) {
+				livros.setPaginas(livrosAtualizado.getPaginas());
+			}
+			livros.setDisponivel(livrosAtualizado.isDisponivel());
+			Livros livroAtualizado = livrosRepository.save(livros);
+			return ResponseEntity.ok(livros);
+		} else {
+			return ResponseEntity.notFound().build();
+		}
 	}
+
 	
 }

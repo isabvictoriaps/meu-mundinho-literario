@@ -10,7 +10,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
 @Getter
 @Setter
 @NoArgsConstructor
@@ -34,7 +33,7 @@ public class Livros {
 	private String editora;
 	
 	@Column(name="paginas")
-	private int paginas;
+	private Integer paginas;
 	
 	@Column(name="descricao")
 	private String descricao;
