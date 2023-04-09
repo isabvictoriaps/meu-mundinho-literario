@@ -23,21 +23,21 @@ public class Livros {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name="Título")
+	@Column(name="titulo")
 	private String titulo;
 	
-	@Column(name="Autor")
+	@Column(name="autor")
 	private String autor;
 	
 
 	@Column(name="Editora")
 	private String editora;
 	
-	@Column(name="Páginas")
-	private int páginas;
+	@Column(name="paginas")
+	private int paginas;
 	
-	@Column(name="Descrição")
-	private String descrição;
+	@Column(name="descricao")
+	private String descricao;
 	
 	@Column(name="Categoria")
 	private String categoria;

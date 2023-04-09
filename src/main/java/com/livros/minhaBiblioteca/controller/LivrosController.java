@@ -126,8 +126,8 @@ public class LivrosController {
 		 	livros.setTitulo(livrosAtualizado.getTitulo());
 		 	livros.setAutor(livrosAtualizado.getAutor());
 		 	livros.setCategoria(livrosAtualizado.getCategoria());
-		 	livros.setDescrição(livrosAtualizado.getDescrição());
-		 	livros.setPáginas(livrosAtualizado.getPáginas());
+		 	livros.setDescricao(livrosAtualizado.getDescricao());
+		 	livros.setPaginas(livrosAtualizado.getPaginas());
 		 	livros.setEditora(livrosAtualizado.getEditora());
 	        Livros livroAtualizado = livrosRepository.save(livros);
 		 	return ResponseEntity.ok(livros);
