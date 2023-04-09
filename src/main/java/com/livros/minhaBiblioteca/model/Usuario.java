@@ -1,15 +1,14 @@
 package com.livros.minhaBiblioteca.model;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Email;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 
 @Getter
 @Setter
@@ -17,34 +16,21 @@ import lombok.Setter;
 @EqualsAndHashCode
 
 @Entity
-public class Livros {
+public class Usuario {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long uuid;
 	
-	@Column(name="titulo")
-	private String titulo;
+	@Column(name="nm_completo")
+	private String nomeCompleto;
 	
-	@Column(name="autor")
-	private String autor;
+	@Email(message = "Email inválido. O email deve conter o caractere '@'")
+	@Column(name="email")
+	private String email;
 	
+	@Column(name= "senha")
+	private String senha;
 
-	@Column(name="Editora")
-	private String editora;
 	
-	@Column(name="paginas")
-	private int paginas;
-	
-	@Column(name="descricao")
-	private String descricao;
-	
-	@Column(name="Categoria")
-	private String categoria;
-	
-	@Column(name="Disponibilidade")
-	private boolean disponivel;
-	
-	
-
 }
