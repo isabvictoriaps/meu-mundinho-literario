@@ -19,6 +19,8 @@ leitura e empresta as minhas preciosidades para democratizar o acesso aos livros
 - [x]  adiciona um novo usuário
 - [x]  atualiza o usuário com o ID especificado
 - [x]  remove o usuário com o ID especificado
+- [ ]  retorna todos os empréstimos 
+- [ ]  retorna um empréstimo com o ID especificado
 - [ ]  registra um novo empréstimo
 - [ ]  atualiza o empréstimo com o ID especificado (por exemplo, para registrar a devolução do livro)
 - [ ]  remove o empréstimo com o ID especificado
