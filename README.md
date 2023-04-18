@@ -7,7 +7,7 @@
 
 </div>
 
-<p  align="center"> Para pessoas cujo desejo é imergir no incrível mundo da leitura, o ‘Meu mundinho literário’ é um site que incentiva o hábito da 
+<p  align="center"> Para pessoas cujo desejo é imergir no incrível mundo da leitura, o ‘mundinho literário’ é um site que incentiva o hábito da 
 leitura e empresta as minhas preciosidades para democratizar o acesso aos livros. </p><br>
 
 # 🕹 Controllers
