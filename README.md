@@ -1,7 +1,14 @@
-# 🦋 api - meu mundinho literario
 
-Para pessoas cujo desejo é imergir no incrível mundo da leitura, o ‘Meu mundinho literário’ é um site que incentiva o hábito da 
-leitura e empresta as minhas preciosidades para democratizar o acesso aos livros. <br>
+
+<div align="center">
+
+![logo - mundinho literário](https://user-images.githubusercontent.com/93364960/232653717-ce8b40cc-e695-4cef-a575-791fbabab9e8.png)
+
+
+</div>
+
+<p  align="center"> Para pessoas cujo desejo é imergir no incrível mundo da leitura, o ‘Meu mundinho literário’ é um site que incentiva o hábito da 
+leitura e empresta as minhas preciosidades para democratizar o acesso aos livros. </p><br>
 
 # 🕹 Controllers
 
