@@ -50,12 +50,18 @@ Ainda em desenvolvimento, este controlador será responsável por gerenciar os e
 - [ ]  remove o empréstimo com o ID especificado
 
 # ⚒️ tecnologias
+<b> - Linguagem:</b> Java; <br>
+<b> - Banco de dados: </b> SQL Developer; <br>
+<b> - Framework: </b> SpringBoot. <br>
 
-- Java
-- Spring Boot
-- Maven
-- Hibernate
-- SQL Server
-- MySQL
+<b>Dependencias utilizadas: </b> <br>
+- Spring Data JPA; <br>
+- Oracle Database; <br>
+- Spring-web; <br>
+- Validation; <br>
+- Lombok; <br>
+- Spring Doc; <br>
+- Thymeleaf. <br>
+
 
 # 
